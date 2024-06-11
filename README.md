@@ -1,6 +1,8 @@
-# ANT Video WebRTC test player
+# ANT Video WebRTC Test Player
 
 For testing ANT VIDEO WebRTC using pure video tag and web adaptor js provided by ANT Media.
+
+Also included some of the tools I created to make my life easier..
 
 ## Parameters
 
