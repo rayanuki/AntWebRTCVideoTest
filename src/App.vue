@@ -77,11 +77,11 @@ const videoHandler = (d)=>{
                 case 'data_store_not_available':
                     // isNotPlaying.value = true;
                     // TODO: show VIDEO NOT AVAILABLE error and try to reconnect again
-                    isStopped = true;
-                    clearTimeout(streamTout);
-                    streamTout = setTimeout(()=>{
-                      WebRTCPlayer.tryPlayAgain();
-                    }, 1000);
+                    // isStopped = true;
+                    // clearTimeout(streamTout);
+                    // streamTout = setTimeout(()=>{
+                    //   WebRTCPlayer.tryPlayAgain();
+                    // }, 1000);
                 break;
                 case 'notSetRemoteDescription':
 
@@ -283,11 +283,24 @@ input{
   margin-top: 10px;
   width: calc(100% - 10px);
   padding: 6px;
+  font-size: large;
 }
 
 button{
   padding: 5px 10px;
   border-radius: 6px;
+  font-size: 2em;
   cursor: pointer;
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  input{
+    font-size: medium;
+  }
+
+  button{
+    font-size: medium;
+  }
 }
 </style>
